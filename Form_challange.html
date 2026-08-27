@@ -14,5 +14,15 @@
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 
+<script>
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Please enter required details");
+            return false;
+        }
+    }
+</script>
+
 </body>
 </html>
