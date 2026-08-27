@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html>
+<head>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#section1 {
+  height: 600px;
+  background-color: #d8c4f1;
+  padding: 30px;
+}
+
+#section2 {
+  height: 600px;
+  background-color: #d9ead3;
+  padding: 30px;
+}
+
+.snorlax {
+  width: 350px;
+  display: block;
+  margin-top: 20px;
+}
+
+a {
+  color: #333;
+  font-weight: bold;
+}
+
+</style>
+
+</head>
+
 <body>
 
-<h1>HTML Links</h1>
+<h1 style="padding-left: 30px;">My Smooth Scroll Page</h1>
 
-<p><a href="https://ie.pinterest.com/pin/529665606200236488/">Visit my My Snorlax</a></p>
+<div id="section1">
+
+  <h2>Welcome to Section 1</h2>
+
+  <p>
+    This is my first section. Click the link below to smoothly
+    scroll down to meet Snorlax!
+  </p>
+
+  <a href="#section2">Go to Snorlax ↓</a>
+
+  <p>
+    The smooth scrolling effect is created using
+    <b>scroll-behavior: smooth;</b>
+  </p>
+
+</div>
+
+
+<div id="section2">
+
+  <h2>Welcome to Section 2 💤</h2>
+
+  <p>
+    You made it! Here's our very relaxed visitor.
+  </p>
+
+  <img class="snorlax" src="Snorlax.jpg">
+
+  <br>
+
+  <a href="#section1">↑ Back to Section 1</a>
+
+</div>
 
 </body>
 </html>
