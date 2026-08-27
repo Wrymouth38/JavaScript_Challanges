@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/* Make the page a little nicer */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Sticky contact button */
+.contact-button {
+    position: sticky;
+    top: 10px;
+    float: right;
+    margin: 10px 20px;
+    padding: 15px 25px;
+    background-color: #5b2ca0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #401f75;
+}
+
+/* The popup background */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/* Form inputs */
+.popup input,
+.popup textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    box-sizing: border-box;
+}
+
+/* Buttons inside the popup */
+.send-button {
+    background-color: #5b2ca0;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.close-button {
+    background-color: #d62828;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>My Website</h1>
+
+<button class="contact-button" onclick="openContact()">
+    Contact Me
+</button>
+
+<div class="popup" id="contactForm">
+
+    <h2>Get In Touch</h2>
+
+    <label>Your Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Message:</label>
+    <textarea rows="4" placeholder="Write your message"></textarea>
+
+    <button class="send-button">Send Message</button>
+
+    <button class="close-button" onclick="closeContact()">
+        Close
+    </button>
+
+</div>
+
+
+<h2>Welcome!</h2>
+
+<p>
+    This is some example content for my website.
+    Scroll down and the Contact Me button will remain
+    visible near the top of the page.
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    This is just here to give us enough content to demonstrate
+    the sticky button.
+</p>
+
+<h2>About Me</h2>
+
+<p>
+    Here is some more content. Keep scrolling and notice
+    that the Contact Me button stays in position.
+</p>
+
+<p>
+    More example content goes here. You can replace this
+    with whatever you want on your own website.
+</p>
+
+<h2>My Projects</h2>
+
+<p>
+    Project information would go here.
+</p>
+
+<p>
+    Keep scrolling down the page to test the sticky button.
+</p>
+
+<p>
+    More content...
+</p>
+
+<p>
+    More content...
+</p>
+
+<p>
+    More content...
+</p>
+
+<p>
+    More content...
+</p>
+
+<script>
+
+function openContact() {
+    document.getElementById("contactForm").style.display = "block";
+}
+
+function closeContact() {
+    document.getElementById("contactForm").style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
