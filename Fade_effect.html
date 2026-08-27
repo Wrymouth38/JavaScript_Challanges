@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Basic HTML Template</title>
+
+<style>
+    body {
+        opacity: 1;
+        transition: 3s opacity;
+    }
+
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+    }
+
+    html {
+        background-color: black;
+    }
+
+    p {
+        color: white;
+    }
+</style>
+
+</head>
+
+<body>
+
+<script>
+    document.body.classList.add('fade-out');
+</script>
+
+    <p>This is a paragraph will be used as an example to the 
+        new fade up effect used with CSS and JavaScript.
+    </p>
+
+<script>
+    setTimeout(() => {
+        document.body.classList.remove('fade-out');
+    }, 3000);
+</script>
+
+</body>
+
+</html>
