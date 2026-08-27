@@ -30,6 +30,6 @@ li {
 
 footer {
     border: 0;
-    text-align: bottom;
+    min-height: 100dvh;
 }
 
