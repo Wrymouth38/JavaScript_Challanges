@@ -11,7 +11,7 @@
 
 <script>
 
-    var games = {"firstgame": "League Of Legends", "secondgame": "Aion 2", "thirdgame": "Baldurs Gate 3"};
+    var games = '{"firstgame": "League Of Legends", "secondgame": "Aion 2", "thirdgame": "Baldurs Gate 3"}';
 
     var JSONstring = JSON.parse(games);
     document.getElementById("MyGames").innerHTML = JSONstring.firstgame + "is mostly played game by me.";
