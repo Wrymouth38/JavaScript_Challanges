@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    
+
+<body>
+
+    <p id="MyGames"></p>
+
+<script>
+
+   /*set the data as a key/value pair to be saved locally in your web browser*/
+   localStorage.setItem("PhoneNumber", "08773334444");
+   /*then use the key "PhoneNumber" to return its value*/
+   document.getElementById("MyGames").innerHTML = localStorage.getItem("PhoneNumber");
+
+</script>
+</body>
+</html>
