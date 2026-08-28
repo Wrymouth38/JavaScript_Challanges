@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    
+
+<body>
+
+    <p id="MyGames"></p>
+
+<script>
+
+    var games = {firstgame: "League Of Legends", secondgame: "Aion 2", thirdgame: "Baldurs Gate 3"};
+
+    var JSONstring = JSON.stringify(games);
+    document.getElementById("MyGames").innerHTML = JSONstring;
+
+</script>
+</body>
+</html>
