@@ -47,7 +47,7 @@ function show() {
 
 /*this function removes the items from the list  */
 function remove() {
-    var od = this.getAttribute('id');
+    var id = this.getAttribute('id');
     var todos = get_todos();
 
     todos.splice(id, 1);
