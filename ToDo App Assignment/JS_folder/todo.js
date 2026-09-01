@@ -9,7 +9,7 @@ function get_todos() {
     if (todos_str !== null) {
         todos = JSON.parse(todos_str);
     }
-    return todosl;
+    return todos;
 }
 
 /*This function adds the inputed task to the get_todos function array*/
@@ -33,7 +33,7 @@ function show() {
     /*this sets the task that was retrieved as a variable*/
     var todos = get_todos();
 
-    /*this this sets up each task an unordered list*/
+    /*this sets up each task an unordered list*/
     var html = '<ul>';
     /*this displays a task to the list in the order that it is inputed*/
     for (var i = 0; i < todos.length; i++)  {
